@@ -18,16 +18,23 @@
             <button onclick="replaceText(this)">Yes</button>
             <button onclick="replaceText(this)">No</button>
         </div>
+        <p id="response"></p>
     </main>
 
     <script>
         function replaceText(button) {
+            const response = document.getElementById('response');
             if (button.innerText === 'No') {
-                button.innerText = 'Are you sure';
-            } else if (button.innerText === 'Are you sure') {
+                button.innerText = 'Are you sure?';
+            } else if (button.innerText === 'Are you sure?') {
                 button.innerText = 'Are you absolutely sure?';
-            }else if (button.innerText==='Are you absolutely sure?'){
+            } else if (button.innerText === 'Are you absolutely sure?') {
                 button.innerText = 'Not even if you would have a ton of fun?';
+            } else if (button.innerText === 'Not even if you would have a ton of fun?') {
+                button.innerText = 'Come on plsplsplsplspls no?';
+            } else if (button.innerText === 'Come on plsplsplsplspls no?') {
+                button.style.display = 'none';
+                response.innerText = 'hehehe now you have no choice but to click on yes';
             }
         }
     </script>

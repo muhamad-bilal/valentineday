@@ -20,8 +20,8 @@ p {
 
 button {
     font-family: "Acme", sans-serif;
-    padding: 12px 24px; /* Adjust padding to make the buttons bigger */
-    font-size: 18px; /* Increase font size */
+    padding: 16px 36px; /* Adjust padding to make the buttons bigger */
+    font-size: 30px; /* Increase font size */
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -35,5 +35,9 @@ button {
 }
 
 button:first-child {
-    margin-right: 4px; /* Add margin between buttons */
+    margin-right: 8px; /* Add margin between buttons */
+}
+
+img{
+    margin-left: 125px;
 }
