@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello dear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <img src="media/VeC.gif" alt="happy love gif">
+        <p>Would you be my valentine?</p>
+        <div>
+            <button onclick="replaceText(this)">Yes</button>
+            <button onclick="replaceText(this)">No</button>
+        </div>
+    </main>
+
+    <script>
+        function replaceText(button) {
+            if (button.innerText === 'No') {
+                button.innerText = 'Are you sure';
+            } else if (button.innerText === 'Are you sure') {
+                button.innerText = 'Are you absolutely sure?';
+            }else if (button.innerText==='Are you absolutely sure?'){
+                button.innerText = 'Not even if you would have a ton of fun?';
+            }
+        }
+    </script>
+</body>
+</html>
